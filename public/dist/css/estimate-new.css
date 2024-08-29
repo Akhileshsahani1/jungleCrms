@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+    background: #f4f4f4;
+    color: #535b61;
+    /* font-family: 'Roboto'; */
+    font-size: 13px;
+}
+
+.estimate-container {
+    margin: 10px auto;
+    padding: 60px 60px 0px 60px;
+    max-width: 950px;
+    background-color: #fff;
+    border-radius: 0px;
+    width: 100%;
+    /*box-shadow: 0px 3px 9px #00000047;*/
+    border: 1px solid #ddd;
+}
+
+.estimate-heading {
+    font-size: 24px !important;
+    color: #0c2f54;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.btn-outline-success {
+    color: #000000;
+    border-color: #00943C;
+    border: 2px solid #00943C;
+    background: white;
+}
+
+hr {
+    border-top: 1px solid #646464;
+}
+
+.table-billing-details th {
+    padding: 0;
+    vertical-align: top;
+    border-top: none;
+    color: #535b61;
+}
+
+.table-billing-details td {
+    padding: 0;
+    vertical-align: top;
+    border-top: none;
+    color: #535b61;
+}
+
+.detail-heading {
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.table-border {
+    border: 1px solid black;
+    color: #535b61;
+}
+
+.accept-button {
+    margin: 0 0 0 0px;
+}
+
+.payment-detail {
+    margin: 0 0 0 0px;
+}
+
+.table-content td,
+.table-content th {
+    padding: 0.40rem;
+}
+
+.table-mobile {
+    display: none;
+}
+
+.table-desktop {
+    display: table;
+}
+
+.table td,
+.table th {
+    border-top: none;
+}
+
+.final-amount {
+    margin-right: 43px;
+    line-height: 35px;
+}
+.bank-details {
+    float: right;
+}
+@media only screen and (max-width: 768px) {
+    .estimate-heading {
+        font-size: 18px !important;
+    }
+
+    .table-mobile {
+        display: table;
+    }
+
+    .table-desktop {
+        display: none;
+    }
+
+    .estimate-container {
+        margin: 0px auto;
+        padding:20px 15px 0px 15px;
+    }
+
+    .mobile-details {
+        float: right;
+    }
+    .bank-details {
+        float: right;
+    }
+}
+.f12{
+    font-size: 12px;
+}
+.f13{
+    font-size: 13px;
+}
+.f16{
+    font-size: 16px;
+}
+.f900{
+    font-weight: 900;
+}
+.f700{
+    font-weight: 700;
+}
+.card-header-tabs {
+    margin-right: -0.625rem;
+    margin-bottom: -0.75rem;
+    margin-left: -0.625rem;
+    border: 1px solid #d4d4d4;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+}
+.nav-tabs .nav-link {
+    border: 0px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    font-family: 'Nunito', sans-serif;
+}
+.nav-tabs .nav-link h4 {
+    font-weight: 700;
+}
+.nav-tabs .nav-link .f12.f900 {
+    font-weight: 700;
+    letter-spacing: .2px;
+    font-size: 13px;
+    color: #6c757d !important;
+}
+a {
+    color: black!important;
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav-link.active {
+    color: #008F34 !important;
+    background-color: #efefef!important;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.info{
+    border: 1px solid #d4d4d4;
+}
+.payment{
+    /*border: 1px solid #d4d4d4;
+    background-color: #efefef!important;*/
+    margin-bottom: 15px;
+}
+/*****avi*********/
+.billedby span {
+    display: block;
+}
+.billedby span b {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.billedby span {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #000;
+    text-align: right;
+}
+.billedby span strong {
+    color: #000;
+}
+.table-condensed {
+    margin-top: 30px;
+}
+.buttontype {
+    margin-top: 30px;
+}
+.table-condensed tr th.billedtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.table-condensed tr th.billedname {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    color: #008f34;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.table-condensed tr td {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #000;
+}
+.table-condensed tr td strong {
+    color: #000;
+}
+.bookdetail tr th.card-title {
+    background: #008f34;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 7px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.bookdetail tr td b {
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: .2px;
+    color: #000;
+    text-align: left;
+}
+.bookdetail tr td span {
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    letter-spacing: .2px;
+    color: #000;
+    text-align: right;
+    display: block;
+}
+.bookdetail {
+    border-bottom: 2px solid #008f34;
+}
+.Packages span strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #000;
+    letter-spacing: .2px;
+    font-weight: 500;
+}
+.Packages span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: .2px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.Terms span strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #000;
+    letter-spacing: .2px;
+    font-weight: 500;
+}
+.Terms span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: .2px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #08b14617;
+}
+.forenquiry {
+    max-width: 55%;
+    margin-bottom: 40px;
+    background-color: #08b14617;
+    padding: 20px;
+    border-left: 2px solid #008f34;
+    padding-bottom: 0px;
+}
+.forenquiry h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #000;
+    letter-spacing: .2px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.forenquiry span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #000 !important;
+    letter-spacing: .2px;
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.buttontype h4.estimate-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px !important;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .2px;
+    display: block;
+}
+.payment strong {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+.payment span.float-right {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.scantopay p.scantitle {
+    background: #008f34;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.scantopay p.text-cente.text-info {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    letter-spacing: .2px;
+}
+#razorpay img {
+    width: 15px;
+}
+.Terms span span.arrow {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: initial;
+}
+.Packages span span.arrow {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: initial;
+}
+.logo img {
+    padding-top: 35px;
+}
+.safarilogo img {
+    padding-top: 20px;
+}
+.bookdetail tr th.card-title.rating {
+    font-size: 17px;
+}
+.bookdetail tr th.card-title.rating span {
+    margin-right: 5px;
+    position: relative;
+    bottom: 7px;
+}
+.fbilledby {
+    margin-bottom: 15px;
+}
+.fbilledby span b{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.fbilledby span{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #000;
+    text-align: left;
+}
+#accordionExample .card{
+    color: black;
+    border: none;
+}
+#accordionExample .card-header{
+    padding: 0;
+    background-color: white;
+    border-bottom: 3px solid rgba(0,0,0,.125);
+}
+#accordionExample .btn{
+    font-weight: 600;
+    font-size: 14px;
+}
+#accordionExample .btn{
+    font-weight: 600;
+}
+#accordionExample .btn:focus{
+    box-shadow: none;
+}
+#accordionExample .btn .fa{
+    position: absolute;
+    right: 15px;
+    color: #28a745;
+}
+/*********Responsive**********/
+@media (max-width: 767px){
+.fbilledby span b{
+    text-align: center;
+    display: block;
+}    
+.fbilledby span {
+    text-align: center;
+}
+.nav-link {
+    padding: 0.5rem 0.5rem;
+}
+.nav-tabs .nav-item{
+    width: 50%;
+}
+.bookdetail tr th.card-title.rating {
+    font-size: 15px;
+}    
+.bookdetail tr th.card-title.rating span {
+    bottom: 19px;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+.billedby span b {
+    font-size: 15px;
+    font-weight: 600;
+}
+.billedby span {
+    font-size: 13px;
+    text-align: center;
+}
+.table-condensed tr th.billedtitle {
+    font-size: 15px;
+    font-weight: 600;
+}
+.table-condensed tr th.billedname {
+    font-size: 15px;
+}
+.table-condensed tr td {
+    font-size: 13px;
+}
+.billedcol {
+    width: 54%;
+}
+.estimatecol {
+    width: 46%;
+}
+.buttontype h4.estimate-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px !important;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .2px;
+    display: block;
+}
+.bookdetail tr th.card-title {
+    font-size: 17px;
+    padding: 5px;
+    font-weight: 600;
+}
+.bookdetail tr td span{
+    font-size: 14px;
+}
+.bookdetail tr td b{
+    font-size: 14px;
+}
+.bookdetail tr td {
+    padding: 9px;
+}
+.scantopay p.scantitle {
+    font-size: 15px;
+    padding: 7px;
+    font-weight: 600;
+}
+.Packages span strong{
+    font-size: 13px;
+}
+.Packages span{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.Terms span strong{
+    font-size: 13px;
+}
+.Terms span{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.forenquiry{
+    max-width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+}
+.forenquiry h6{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.forenquiry span{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.scantopay p.text-cente.text-info {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.acceptedbtn {
+    margin-top: 5px !important;
+}
+
+}

@@ -1,0 +1,55 @@
+image: gitlab.n2rtechnologies.com:5050/nurulhasan/junglecrm
+
+services:
+  - mysql:5.7
+
+variables:
+  MYSQL_DATABASE: junglecrm
+  MYSQL_ROOT_PASSWORD: Temp@@9921
+  DB_HOST: mysql
+  DB_USERNAME: root
+
+stages:
+  - test
+  - deploy_staging
+  - deploy_production
+
+unit_test:
+  stage: test
+  script:
+    - cp .env.example .env
+    - composer install
+    - php artisan key:generate
+    - php artisan migrate:fresh --seed 
+    - vendor/bin/phpunit
+
+deploy_staging:
+  stage: deploy_staging
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ~/.composer/vendor/bin/dep deploy staging
+  environment:
+    name: development
+    url: http://leadscrm.n2rtech.com/developer-login
+  only:
+    - development
+
+deploy_production:
+  stage: deploy_production
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY_LIVE")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+    - ~/.composer/vendor/bin/dep deploy production
+  environment:
+    name: production
+    url: https://crm.junglesafariindia.in/
+  only:
+    - main

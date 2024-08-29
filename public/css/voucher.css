@@ -1,0 +1,57 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css");
+/** Define the margins of your page **/
+@page {
+    margin: 100px 25px;
+}
+
+header {
+    position: fixed;
+    top: -60px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: -60px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+
+    /** Extra personal styles **/
+    background-color: #03a9f4;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+hr {
+    border-top: 1px solid #646464;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.estimate-heading {
+    font-size: 24px !important;
+    color: #0c2f54;
+    font-weight: 600;
+    margin-top: 0px;
+}

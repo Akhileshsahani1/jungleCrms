@@ -1,0 +1,70 @@
+.invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+.customer-box{
+    text-align: center;
+    background-color: #eaeff700;
+    padding: 10px;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+.customer-detail-box{
+    background-color: #eaeff700;
+    padding: 10px;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+.customer-detail-heading {
+    text-align: center;
+    background-color: #494E53;
+    color: white;
+    height: 27px;
+}
+.bg-purple{
+    background-color: #605ca8;
+    color: white;
+}
+.bg-lime{
+    background-color: #01ff70;
+}
+.bg-orange{
+    background-color: #ff851b;
+    color: white !important;
+}
+.bg-indigo{
+    background-color: #6610f2;
+    color: white;
+}
+.bg-grey{
+    background-color: #adb5bd;
+}
+.bg-dark{
+    background-color: #000000;
+    color: white;
+}
+.bg-brown{
+    background-color: brown;
+    color: white;
+}
+
+.dropdown-item {
+    padding: 3px 0.25rem;
+}
+li.dropdown-item:hover {
+    color:white;
+    background-color: #000000;
+}
+.inclusion-weekend, .inclusion-festival{
+    display: none;
+}
+.term-weekend, .term-festival{
+    display: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}

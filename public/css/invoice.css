@@ -1,0 +1,17 @@
+@page{
+    margin-top: 100px; /* create space for header */
+    margin-bottom: 70px; /* create space for footer */
+}
+header, footer{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+header{
+    height: 60px;
+    margin-top: -60px;
+}
+footer{
+    height: 50px;
+    margin-bottom: -50px;
+  }
